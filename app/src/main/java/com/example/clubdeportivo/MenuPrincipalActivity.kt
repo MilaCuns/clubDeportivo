@@ -19,7 +19,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
             val intent = Intent(this, RegistrarSocioActivity::class.java)
             startActivity(intent)
         }
-
+/*
         val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividad)
         btnAsignarActividad.setOnClickListener {
             val intent = Intent(this, AsignarActividadActivity::class.java)
@@ -30,6 +30,6 @@ class MenuPrincipalActivity : AppCompatActivity() {
         btnListarSociosCuotaVencida.setOnClickListener {
             val intent = Intent(this, ListarSociosCuotaVencidaActivity::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 }
