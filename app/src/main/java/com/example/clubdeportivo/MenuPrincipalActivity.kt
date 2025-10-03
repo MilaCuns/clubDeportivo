@@ -1,6 +1,8 @@
 package com.example.clubdeportivo
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,10 +13,23 @@ class MenuPrincipalActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_menu_principal)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        val btnRegistrarSocio = findViewById<Button>(R.id.btnRegistrarSocio)
+        btnRegistrarSocio.setOnClickListener{
+            val intent = Intent(this, RegistrarSocioActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividad)
+        btnAsignarActividad.setOnClickListener {
+            val intent = Intent(this, AsignarActividadActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnListarSociosCuotaVencida = findViewById<Button>(R.id.btnListarSociosCuotaVencida)
+        btnListarSociosCuotaVencida.setOnClickListener {
+            val intent = Intent(this, ListarSociosCuotaVencidaActivity::class.java)
+            startActivity(intent)
         }
     }
 }
