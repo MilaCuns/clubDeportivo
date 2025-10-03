@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipalActivity"
+    android:orientation="vertical"
+    android:background="@color/yellow">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/yellow"
+        android:layout_marginBottom="60dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido, User123!"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:gravity="right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"/>
+    </FrameLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/logo_club_alpha">
+
+        <Button
+            android:id="@+id/btnRegistrarSocio"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_fondo"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+
+            android:text="Registrar socio" />
+
+        <Button
+            android:id="@+id/btnAsignarActividad"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_fondo"
+            android:textSize="22dp"
+            android:text="Asignar actividad"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnListarSociosCuotaVencida"
+            android:layout_width="350dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext_fondo"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            android:text="Listar socios con cuota vencida" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
