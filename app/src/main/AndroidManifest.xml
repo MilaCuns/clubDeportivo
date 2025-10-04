@@ -12,6 +12,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ClubDeportivo">
         <activity
+            android:name=".ListarSociosCuotaVencidaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistroExitosoSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CarnetSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FacturaDigitalCuotaSocioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagoCuotaRegistradoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PagarCuotaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AsignarActividadActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrarSocioActivity"
             android:exported="false" />
         <activity

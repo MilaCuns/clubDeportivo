@@ -8,15 +8,15 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class RegistrarSocioActivity : AppCompatActivity() {
+class PagoCuotaRegistradoActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_registrar_socio)
+        setContentView(R.layout.activity_pago_cuota_registrado)
 
-        val btnRegistrarSocio = findViewById<Button>(R.id.btnRegistrarSocio)
-        btnRegistrarSocio.setOnClickListener {
-            val intent = Intent(this, RegistroExitosoSocioActivity::class.java)
+        val btnMostrarFactura= findViewById<Button>(R.id.btnMostrarFactura)
+        btnMostrarFactura.setOnClickListener {
+            val intent = Intent(this, FacturaDigitalCuotaSocioActivity::class.java)
             startActivity(intent)
         }
     }

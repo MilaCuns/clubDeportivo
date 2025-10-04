@@ -5,8 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+
 
 class MenuPrincipalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,7 +18,7 @@ class MenuPrincipalActivity : AppCompatActivity() {
             val intent = Intent(this, RegistrarSocioActivity::class.java)
             startActivity(intent)
         }
-/*
+
         val btnAsignarActividad = findViewById<Button>(R.id.btnAsignarActividad)
         btnAsignarActividad.setOnClickListener {
             val intent = Intent(this, AsignarActividadActivity::class.java)
@@ -30,6 +29,6 @@ class MenuPrincipalActivity : AppCompatActivity() {
         btnListarSociosCuotaVencida.setOnClickListener {
             val intent = Intent(this, ListarSociosCuotaVencidaActivity::class.java)
             startActivity(intent)
-        }*/
+        }
     }
 }
