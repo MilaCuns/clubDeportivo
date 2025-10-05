@@ -22,8 +22,8 @@
 
         <TextView
             android:layout_width="360dp"
-            android:layout_height="110dp"
-            android:text="FACTURA DIGITAL CUOTA SOCIO"
+            android:layout_height="150dp"
+            android:text="FACTURA DIGITAL ACTIVIDAD PAGADA"
             android:textColor="@android:color/white"
             android:textSize="40sp"
             android:textStyle="bold"
@@ -54,7 +54,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comprobante de pago cuota"
+            android:text="Comprobante de pago de actividad"
             android:textSize="18sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"
@@ -63,7 +63,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Socio: "
+            android:text="Nombre de actividad "
             android:textSize="16sp"
             android:textStyle="bold"
             android:textColor="@android:color/black"/>
